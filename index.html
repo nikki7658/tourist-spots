@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台北一日遊推薦</title>
+  <style>
+    /* ===== 基本設定 ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ===== 頂部橫幅 ===== */
+    header {
+      background: linear-gradient(135deg, #2b7a78, #3aafa9);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* ===== 導覽列 ===== */
+    nav {
+      background-color: #17252a;
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #3aafa9;
+    }
+
+    /* ===== 主要內容 ===== */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #2b7a78;
+      border-left: 6px solid #3aafa9;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* ===== 行程卡片 ===== */
+    .card {
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .time {
+      background-color: #3aafa9;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      min-width: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h3 {
+      margin-bottom: 6px;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #def2f1;
+      color: #2b7a78;
+      font-size: 0.85rem;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-top: 8px;
+    }
+
+    /* ===== 交通資訊表格 ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #2b7a78;
+      color: white;
+    }
+
+    /* ===== 小提醒 ===== */
+    ul.tips {
+      background: white;
+      padding: 20px 20px 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    ul.tips li {
+      margin-bottom: 8px;
+    }
+
+    /* ===== 頁尾 ===== */
+    footer {
+      background-color: #17252a;
+      color: #ccc;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.9rem;
+    }
+
+    /* ===== 手機版 ===== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        flex-direction: column;
+      }
+
+      .time {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 頂部橫幅 -->
+  <header>
+    <h1>🏙️ 台北一日遊</h1>
+    <p>從古蹟、美食到夜景，一天玩遍台北精華</p>
+  </header>
+
+  <!-- 導覽列 -->
+  <nav>
+    <a href="#itinerary">行程安排</a>
+    <a href="#transport">交通方式</a>
+    <a href="#tips">小提醒</a>
+  </nav>
+
+  <main>
+
+    <!-- 行程安排 -->
+    <section id="itinerary">
+      <h2>📍 行程安排</h2>
+
+      <div class="card">
+        <div class="time">09:00</div>
+        <div class="content">
+          <h3>中正紀念堂</h3>
+          <p>白牆藍瓦的紀念堂十分壯觀，早上人少，很適合拍照，整點還能看到衛兵交接儀式。</p>
+          <span class="tag">歷史・拍照</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="time">12:00</div>
+        <div class="content">
+          <h3>永康街午餐</h3>
+          <p>巷弄裡有小籠包、牛肉麵、芒果冰等知名美食，可以邊逛邊吃。</p>
+          <span class="tag">美食</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="time">14:30</div>
+        <div class="content">
+          <h3>華山 1914 文化創意產業園區</h3>
+          <p>由舊酒廠改造的文創園區，有展覽、特色小店和咖啡廳，適合悠閒散步。</p>
+          <span class="tag">文創・展覽</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="time">17:00</div>
+        <div class="content">
+          <h3>象山步道看夕陽</h3>
+          <p>爬約 20 分鐘就能到達觀景平台，可以一邊看夕陽，一邊俯瞰 101 大樓和台北市區。</p>
+          <span class="tag">登山・夜景</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="time">19:30</div>
+        <div class="content">
+          <h3>士林夜市</h3>
+          <p>最後一站來逛夜市，大雞排、蚵仔煎、珍珠奶茶等小吃通通不能錯過。</p>
+          <span class="tag">小吃・夜市</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 交通方式 -->
+    <section id="transport">
+      <h2>🚇 交通方式</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>路段</th>
+            <th>建議交通工具</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>中正紀念堂 → 永康街</td>
+            <td>步行約 10 分鐘</td>
+          </tr>
+          <tr>
+            <td>永康街 → 華山 1914</td>
+            <td>捷運（東門站 → 忠孝新生站）</td>
+          </tr>
+          <tr>
+            <td>華山 1914 → 象山</td>
+            <td>捷運（忠孝新生站 → 象山站）</td>
+          </tr>
+          <tr>
+            <td>象山 → 士林夜市</td>
+            <td>捷運（象山站 → 劍潭站）</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 小提醒 -->
+    <section id="tips">
+      <h2>💡 小提醒</h2>
+      <ul class="tips">
+        <li>準備一張悠遊卡，搭捷運和公車都很方便。</li>
+        <li>穿一雙好走的鞋，一天的步行量不少。</li>
+        <li>台北常常下雨，記得帶一把傘。</li>
+        <li>出發前再確認各景點的開放時間。</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 台北一日遊推薦｜作業練習用網頁</p>
+  </footer>
+
+</body>
+</html>
